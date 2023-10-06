@@ -37,7 +37,7 @@ export class Client {
             // endpoint by url
             //
             const url = new URL(settings);
-            const secure = (url.protocol === "https:" || url.protocol === "wss:");
+            const secure = false;
             const port = Number(url.port || (secure ? 443 : 80));
 
             this.settings = {
